@@ -1,15 +1,16 @@
 $primary: #8d8d8d;
 $primaryDark: #29282d;
 /* $primaryDarker: #000;
-$primaryLight: #757575;
+$primaryLight: #757575; */
 
-$secondary: #2F303A;
-$secondaryDark: #2F303A; */
+$secondary: #f6f6f6;
+/* $secondaryDark: #2F303A; */
 
 $accent: #fe3e57;
 /* $accentLight: #F29040; */
 
 $neutral: #FFFFFF;
+$neutralDark: #ECECEC;
 /* $neutralLight: #ECECEC;
 $neutralLighter: #F5F4FA;
 $neutralLightest: #E5E5E5; */
@@ -27,6 +28,11 @@ $neutralLightest: #E5E5E5; */
 %roboto-400 {
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
+}
+
+%roboto-500 {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
 }
 
 %roboto-700 {

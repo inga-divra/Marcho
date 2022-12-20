@@ -1,0 +1,122 @@
+.footer {
+    background-color: $secondary;
+    line-height: 2.2;
+    display: flex;
+}
+
+.footer-top {
+    padding: 75px 0 30px;
+    border-bottom: 1px solid $neutralDark;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    &__last-item {
+        max-width: 460px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__item {
+        @extend %quicksand-500;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__address-span {
+        display: block;
+    }
+
+    &__tel {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__social-link:hover &__icon {
+        fill: $accent;
+    }
+
+    &__icon {
+        fill: $primary;
+        transition: fill 0.3s;
+    }
+
+    &__title {
+        @extend %roboto-500;
+        font-size: 22px;
+        line-height: 1.6;
+        color: $primaryDark;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-input {
+        max-width: 305px;
+        width: 100%;
+        padding: 10px 15px;
+        margin-right: 10px;
+        border: transparent;
+        outline-color: rgba($accent, 0.5);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+    }
+
+    &__form-btn {
+        background-color: $accent;
+        color: $neutral;
+        text-transform: uppercase;
+        @extend %roboto-400;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        padding: 9px 15px;
+        box-shadow: rgba($accent, 0.3) 0px 8px 24px 0px;
+    }
+}
+
+.footer-bottom {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+
+
+    &__copy {
+        font-size: 12px;
+        line-height: 2.8;
+    }
+
+    &__accept {
+        display: flex;
+        align-items: center;
+    }
+
+    &__accept-text {
+        font-size: 12px;
+        margin-right: 20px;
+
+    }
+}
