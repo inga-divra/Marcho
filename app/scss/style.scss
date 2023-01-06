@@ -2,10 +2,9 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
+@import 'libs';
+
 @import './components/header';
+@import './components/hero';
 @import './components/footer';
-
-
-
-
 @import 'media';
