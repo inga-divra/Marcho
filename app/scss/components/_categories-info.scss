@@ -1,0 +1,41 @@
+.categories-info {
+    background-image: url('../images/decor/categories-left-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__inner {
+        background-image: url('../images/decor/categories-right-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.info {
+    display: flex;
+    margin-bottom: 115px;
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        padding: 64px 44px;
+        background-color: $neutral;
+        box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__item-icon {
+        margin-bottom: 45px;
+    }
+
+    &__item-title {
+        @extend %roboto-400;
+        text-transform: capitalize;
+        line-height: 1.2;
+        color: $primaryDark;
+        margin-bottom: 17px;
+
+    }
+}

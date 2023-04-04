@@ -18,11 +18,16 @@ body {
     flex-grow: 1;
 }
 
+.section {
+    padding: 123px 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 
 .btn,
 .btn-small {
