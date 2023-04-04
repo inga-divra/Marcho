@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $neutral;
+    color: $primary;
+    font-size: 16px;
+    line-height: 1.6;
+    @extend %quicksand-400;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn,
+.btn-small {
+    background-color: $accent;
+    color: $neutral;
+    box-shadow: rgba($accent, 0.3) 0px 8px 24px 0px;
+    text-transform: uppercase;
+    @extend %roboto-400;
+}
+
+.btn {
+    letter-spacing: 0.2em;
+    padding: 15px 25px;
+}
+
+.btn-small {
+    letter-spacing: 0.05em;
+    padding: 7px 10px;
+}
