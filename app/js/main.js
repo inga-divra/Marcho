@@ -3,14 +3,14 @@ $(function () {
     $('.slider').slick({
         dots: true,
         arrows: false,
-        fade: true,
         autoplay: true,
-        autoplaySpeed: 3000
+        fade: true,
+        "cssEase": "linear",
+        "autoplaySpeed": 0,
+        "speed": 4000,
+        infinite: true
     })
 });
-
-
-
 
 
 // set year
