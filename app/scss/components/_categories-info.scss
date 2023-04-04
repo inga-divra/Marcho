@@ -1,18 +1,44 @@
 .categories-info {
     background-image: url('../images/decor/categories-left-bg.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center left;
 
     &__inner {
         background-image: url('../images/decor/categories-right-bg.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-position: center right;
     }
 }
 
 .info {
     display: flex;
     margin-bottom: 115px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &::before {
+        background-image: url('../images/decor/info-circle-bg.png');
+        top: -40px;
+        left: -45px;
+        width: 120px;
+        height: 120px;
+    }
+
+    &::after {
+        background-image: url('../images/decor/info-square-bg.png');
+        bottom: -23px;
+        right: -23px;
+        width: 65px;
+        height: 62px;
+    }
 
     &__item {
         max-width: 370px;
