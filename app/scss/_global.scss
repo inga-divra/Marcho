@@ -47,3 +47,19 @@ body {
     letter-spacing: 0.05em;
     padding: 7px 10px;
 }
+
+.title {
+    @extend %roboto-700;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 1.6;
+    color: $primaryDark;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 540px;
+}
