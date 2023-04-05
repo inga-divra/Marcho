@@ -48,6 +48,17 @@ body {
     padding: 7px 10px;
 }
 
+.btn-white {
+    background-color: $neutral;
+    color: $primaryDark;
+    border: 1px solid $accent;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    @extend %roboto-400;
+    letter-spacing: 0.2em;
+}
+
 .title {
     @extend %roboto-700;
     text-transform: uppercase;
