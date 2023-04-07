@@ -1,11 +1,12 @@
-@import 'reset';
 @import 'fonts';
+@import 'reset';
 @import 'vars';
 @import 'global';
 @import 'libs';
 
 @import './components/header';
 @import './components/top';
+@import './components/modal';
 @import './components/hero';
 @import './components/categories-info';
 @import './components/video-fashion';
