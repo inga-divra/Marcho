@@ -28,7 +28,6 @@ body {
     padding: 0 15px;
 }
 
-
 .btn,
 .btn-small {
     background-color: $accent;
@@ -48,6 +47,17 @@ body {
     padding: 7px 10px;
 }
 
+.btn-white {
+    background-color: $neutral;
+    color: $primaryDark;
+    border: 1px solid $accent;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    @extend %roboto-400;
+    letter-spacing: 0.2em;
+}
+
 .title {
     @extend %roboto-700;
     text-transform: uppercase;
@@ -61,5 +71,79 @@ body {
 .text {
     text-align: center;
     margin: 0 auto 60px;
-    max-width: 540px;
+    max-width: 570px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.breadcrumbs {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/home.svg');
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 4px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        padding-right: 40px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../images/icons/arrows-right.svg');
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 9px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            color: $accent;
+            padding-right: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center
+    }
+
+    &__icon {
+        fill: $primary;
+
+        margin-right: 7px;
+
+    }
 }

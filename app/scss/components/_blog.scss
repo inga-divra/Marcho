@@ -1,0 +1,94 @@
+.blog {
+    padding-top: 0;
+    padding-bottom: 100px;
+
+    &__items {
+        position: relative;
+        display: flex;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -28px;
+            left: -257px;
+            width: 1626px;
+            height: 581px;
+            background-image: url('../images/decor/blog-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+    }
+
+    &__item {
+        background-color: $neutral;
+        border: 1px solid $neutralDark;
+        box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: translateY(-15px);
+        }
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__item-img {
+        object-fit: cover;
+    }
+
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__item-icon {
+        fill: $primary;
+        margin-right: 10px;
+    }
+
+    &__item-data {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    &__item-footer {
+        padding: 30px 40px 45px 40px;
+    }
+
+    &__item-footer-title {
+        font-size: 22px;
+        line-height: 1.4;
+        color: $primaryDark;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        @extend %roboto-400;
+    }
+
+    &__item-footer-link {
+        display: flex;
+        align-items: center;
+        @extend %quicksand-500;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $accent;
+
+            .blog__item-footer-icon {
+                fill: $accent;
+                transform: translateX(7px);
+            }
+        }
+    }
+
+    &__item-footer-icon {
+        margin-left: 5px;
+        fill: $primary;
+        transition: fill 0.3s, transform 0.3s;
+    }
+}
