@@ -28,7 +28,6 @@ body {
     padding: 0 15px;
 }
 
-
 .btn,
 .btn-small {
     background-color: $accent;
@@ -86,4 +85,65 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.breadcrumbs {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/icons/home.svg');
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 4px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        padding-right: 40px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../images/icons/arrows-right.svg');
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 9px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            color: $accent;
+            padding-right: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center
+    }
+
+    &__icon {
+        fill: $primary;
+
+        margin-right: 7px;
+
+    }
 }

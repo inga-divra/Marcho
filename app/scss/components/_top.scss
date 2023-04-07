@@ -1,0 +1,28 @@
+.top {
+    padding: 0;
+
+    &__inner {
+        max-width: 1700px;
+        background-color: $neutralDark;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: 145px center;
+    }
+
+    &__container {
+        max-width: 1085px;
+        padding: 104px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 48px;
+        @extend %roboto-400;
+        color: $primaryDark;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
