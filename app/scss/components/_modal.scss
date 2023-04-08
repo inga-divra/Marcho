@@ -24,7 +24,7 @@
 
 }
 
-.form-login {
+.modal-form {
     max-width: 570px;
     width: 100%;
     display: flex;
@@ -34,11 +34,15 @@
 
     &__details {
         margin-bottom: 25px;
+
+        &--register {
+            margin-bottom: 0;
+        }
     }
 
     &__label {
         display: block;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
 
     }
 
@@ -62,5 +66,10 @@
 
     &__link {
         color: $accent;
+    }
+
+    &__register-text {
+        line-height: 1.6;
+        margin-bottom: 30px;
     }
 }

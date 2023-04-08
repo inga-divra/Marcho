@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--page-404">
         <div class="container">
             <nav class="menu">
                 <a class="logo" href="#">
@@ -53,55 +53,18 @@
         </div>
     </header>
     <main class="main">
-        <section class="top section">
-            <div class="top__inner" style="background-image: url('./images/top-bg-black.png');">
-                <div class="top__container container">
-                    <h2 class="top__title">Log in</h2>
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" href="#">
-                                    Log in
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <section class="page-404 section">
+            <div class="container page-404__container" style="background-image: url('./images/page-404-bg.png');">
+                <div class="page-404__content">
+                    <h2 class="title page-404__title">OPPS! Page not found!!</h2>
+                    <p class="page-404__text">
+                        We,re sorry but we can’t seem to find the pages you request.
+                        This might be because you have typed
+                        the web address not find incorrectly.
+                    </p>
+                    <a class="btn" href="#">Back to Home</a>
                 </div>
-            </div>
-        </section>
-        <section class="modal section">
-            <div class="container">
-                <div class="modal__wrapper">
-                    <div class="modal__links">
-                        <a class="modal__link" href="#">Register</a>
-                        <a class="modal__link modal__link--active" href="#">Login</a>
-                    </div>
-                    <form class="modal-form" name="loginMarcho">
-                        <div class="modal-form__details">
-                            <label class="modal-form__label">
-                                Username or email address*
-                                <input class="modal-form__input" type="text" name="username" required>
-                            </label>
-                            <label class="modal-form__label">
-                                Password*
-                                <input class="modal-form__input" type="password" name="password" required>
-                            </label>
-                        </div>
-                        <label class="modal-form__checkbox-label">
-                            <input class="modal-form__checkbox" type="checkbox" name="check">
-                            Remember me
-                        </label>
-                        <button class="btn modal-form__btn" type="submit">
-                            Log in
-                        </button>
-                        <a class="modal-form__link" href="#">Lost your password?</a>
-                    </form>
-                </div>
+
             </div>
         </section>
     </main>
